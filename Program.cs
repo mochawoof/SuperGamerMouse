@@ -97,7 +97,7 @@ class Program
 
     static void Main(string[] args)
     {
-        Console.WriteLine("Super Gamer Mouse 1.0");
+        Console.WriteLine("Super Gamer Mouse 1.0.1");
 
         Controller controller = new Controller(UserIndex.One);
 
