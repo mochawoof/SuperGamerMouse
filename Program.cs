@@ -97,7 +97,7 @@ class Program
 
     static void Main(string[] args)
     {
-        Console.WriteLine("Super Gamer Mouse 1.0.1");
+        Console.WriteLine("Super Gamer Mouse 1.0.2");
 
         Controller controller = new Controller(UserIndex.One);
 
@@ -168,7 +168,7 @@ class Program
                     mouse_event(MOUSEEVENTF_RIGHTDOWN, uMouseX, uMouseY, 0, 0);
                     isMouseDownRight = true;
                 }
-                else if (rightTrigger <= TRIGGER_LOWER_CUTOFF && isMouseDownRight)
+                else if (leftTrigger <= TRIGGER_LOWER_CUTOFF && isMouseDownRight)
                 {
                     mouse_event(MOUSEEVENTF_RIGHTUP, uMouseX, uMouseY, 0, 0);
                     isMouseDownRight = false;
