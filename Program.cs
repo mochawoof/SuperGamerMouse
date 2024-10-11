@@ -214,7 +214,7 @@ class Program
 
                             // Launch tabtip manually
                             try {
-                                string workingDirectory = Path.Join(Environment.GetFolderPath(Environment.SpecialFolder.CommonProgramFiles), "microsoft shared\\ink");
+                                string workingDirectory = "C:\\Program Files\\Common Files\\microsoft shared\\ink";
 
                                 ProcessStartInfo processInfo = new ProcessStartInfo(Path.Join(workingDirectory, "TabTip.exe"));
                                 processInfo.UseShellExecute = true;
